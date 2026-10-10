@@ -1,0 +1,9 @@
+# Entorno virtual de Python: se crea en cada servidor con el script de instalación
+.venv/
+__pycache__/
+*.pyc
+
+# Sistema y editores
+.DS_Store
+Thumbs.db
+.vscode/

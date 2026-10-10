@@ -1,0 +1,4 @@
+{
+  "HUERTA10": { "tipo": "porcentaje", "valor": 10 },
+  "PRIMERA5": { "tipo": "fijo", "valor": 5 }
+}

@@ -1,0 +1,5 @@
+# Todos los ficheros de texto con finales de línea de Linux (LF),
+# también si se editan o se suben desde Windows.
+# Un script .sh con finales de Windows (CRLF) no se ejecuta en el servidor.
+* text=auto eol=lf
+*.sh text eol=lf

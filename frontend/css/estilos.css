@@ -1,0 +1,284 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color: #26312b;
+  background: #f6f8f4;
+  line-height: 1.5;
+}
+
+.cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background: #2f6b3c;
+  color: #ffffff;
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.marca h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 1.2rem;
+  padding-bottom: 0.2rem;
+}
+
+nav a.activo {
+  border-bottom: 2px solid #f4c95d;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.contenedor.una-columna {
+  grid-template-columns: minmax(0, 640px);
+  justify-content: center;
+}
+
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid #c5cfc3;
+  border-radius: 6px;
+}
+
+input,
+select,
+textarea {
+  background: #ffffff;
+}
+
+.filtros input {
+  flex: 1;
+  min-width: 180px;
+}
+
+button {
+  background: #2f6b3c;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #25552f;
+}
+
+button.secundario {
+  background: #ffffff;
+  color: #2f6b3c;
+  border: 1px solid #2f6b3c;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.contador {
+  color: #a9b3a7;
+  font-size: 0.9rem;
+}
+
+.rejilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 1rem;
+}
+
+.producto {
+  background: #ffffff;
+  border: 1px solid #e0e6dd;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.producto .icono {
+  font-size: 2.4rem;
+}
+
+.producto h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.producto .precio {
+  font-weight: 700;
+  color: #2f6b3c;
+}
+
+.producto .etiqueta {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7a6c;
+}
+
+.producto .agotado {
+  color: #b3261e;
+  font-size: 0.85rem;
+}
+
+.producto button {
+  margin-top: auto;
+}
+
+.producto button:disabled {
+  background: #c5cfc3;
+  cursor: not-allowed;
+}
+
+.carrito {
+  background: #ffffff;
+  border: 1px solid #e0e6dd;
+  border-radius: 10px;
+  padding: 1.2rem;
+  align-self: start;
+  position: sticky;
+  top: 1rem;
+}
+
+.carrito h2 {
+  margin-top: 0;
+}
+
+#lineas-carrito {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+#lineas-carrito li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #eef1ec;
+  font-size: 0.95rem;
+}
+
+#lineas-carrito .controles button {
+  padding: 0.1rem 0.5rem;
+  margin-left: 0.2rem;
+}
+
+.cupon {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.cupon input {
+  flex: 1;
+  min-width: 0;
+}
+
+.totales {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+}
+
+.totales td {
+  padding: 0.25rem 0;
+}
+
+.totales td:last-child {
+  text-align: right;
+}
+
+.totales .total td {
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-top: 2px solid #26312b;
+  padding-top: 0.5rem;
+}
+
+.aviso {
+  font-size: 0.9rem;
+  color: #6b7a6c;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.campo label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.error {
+  color: #b3261e;
+  font-size: 0.85rem;
+  min-height: 1.2em;
+}
+
+.error-api {
+  grid-column: 1 / -1;
+  padding: 1rem 1.25rem;
+  border: 1px solid #f1b8b2;
+  border-left: 6px solid #b3261e;
+  border-radius: 8px;
+  background: #fdecea;
+  color: #8c1d18;
+}
+
+.error-api p {
+  margin: 0.3rem 0 0;
+}
+
+.pie {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #6b7a6c;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 800px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+  }
+
+  .carrito {
+    position: static;
+  }
+}

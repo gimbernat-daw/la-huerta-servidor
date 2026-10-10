@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Huerta</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <header class="cabecera">
+      <div class="marca">
+        <span class="logo">🥕</span>
+        <h1>La Huerta</h1>
+      </div>
+      <nav>
+        <a href="index.html">Catálogo</a>
+        <a href="contacto.html" class="activo">Contacto</a>
+        <a href="ofertas.html">Ofertas</a>
+      </nav>
+    </header>
+
+    <main class="contenedor una-columna">
+      <section>
+        <h2>Pide tu cesta semanal</h2>
+        <p>Déjanos tus datos y te llamamos para confirmar el reparto.</p>
+
+        <form id="form-contacto" novalidate>
+          <div class="campo">
+            <label for="nombre">Nombre y apellidos</label>
+            <input type="text" id="nombre" name="nombre" />
+            <span class="error" id="error-nombre"></span>
+          </div>
+
+          <div class="campo">
+            <label for="email">Correo electrónico</label>
+            <input type="text" id="email" name="email" />
+            <span class="error" id="error-email"></span>
+          </div>
+
+          <div class="campo">
+            <input
+              type="text"
+              id="telefono"
+              name="telefono"
+              placeholder="Teléfono"
+            />
+            <span class="error" id="error-telefono"></span>
+          </div>
+
+          <div class="campo">
+            <label for="cp">Código postal</label>
+            <input type="text" id="cp" name="cp" />
+            <span class="error" id="error-cp"></span>
+          </div>
+
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+            <span class="error" id="error-mensaje"></span>
+          </div>
+
+          <button type="submit">Enviar</button>
+        </form>
+
+        <p id="resultado" class="aviso"></p>
+      </section>
+    </main>
+
+    <footer class="pie">
+      <p>La Huerta · Proyecto de prácticas · CFGS DAW · Luis Camuñas</p>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/validacion.js"></script>
+    <script src="js/contacto.js"></script>
+  </body>
+</html>

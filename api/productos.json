@@ -1,0 +1,16 @@
+[
+  {"id": 1, "nombre": "Tomate de colgar", "categoria": "verdura", "precio": 3.2, "unidad": "kg", "icono": "🍅", "stock": 25},
+  {"id": 2, "nombre": "Calabacín", "categoria": "verdura", "precio": 1.95, "unidad": "kg", "icono": "🥒", "stock": 18},
+  {"id": 3, "nombre": "Zanahoria", "categoria": "verdura", "precio": 1.4, "unidad": "manojo", "icono": "🥕", "stock": 30},
+  {"id": 4, "nombre": "Berenjena", "categoria": "verdura", "precio": 2.3, "unidad": "kg", "icono": "🍆", "stock": 0},
+  {"id": 5, "nombre": "Pimiento rojo", "categoria": "verdura", "precio": 2.85, "unidad": "kg", "icono": "🫑", "stock": 12},
+  {"id": 6, "nombre": "Brócoli", "categoria": "verdura", "precio": 2.1, "unidad": "unidad", "icono": "🥦", "stock": 9},
+  {"id": 7, "nombre": "Manzana golden", "categoria": "fruta", "precio": 2.4, "unidad": "kg", "icono": "🍏", "stock": 40},
+  {"id": 8, "nombre": "Pera conferencia", "categoria": "fruta", "precio": 2.6, "unidad": "kg", "icono": "🍐", "stock": 22},
+  {"id": 9, "nombre": "Melocotón", "categoria": "fruta", "precio": 3.1, "unidad": "kg", "icono": "🍑", "stock": 0},
+  {"id": 10, "nombre": "Limón", "categoria": "fruta", "precio": 1.8, "unidad": "kg", "icono": "🍋", "stock": 35},
+  {"id": 11, "nombre": "Cesta pequeña (5 kg)", "categoria": "cesta", "precio": 14.5, "unidad": "cesta", "icono": "🧺", "stock": 8},
+  {"id": 12, "nombre": "Cesta familiar (10 kg)", "categoria": "cesta", "precio": 26, "unidad": "cesta", "icono": "🧺", "stock": 5},
+  {"id": 13, "nombre": "Naranja", "categoria": "fruta", "precio": 2.2, "unidad": "kg", "icono": "🍊", "stock": 20},
+  {"id": 14, "nombre": "Calabaza", "categoria": "verdura", "precio": 1.8, "unidad": "kg", "icono": "🎃", "stock": 15}
+]

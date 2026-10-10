@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Huerta</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <header class="cabecera">
+      <div class="marca">
+        <span class="logo">🥕</span>
+        <h1>La Huerta</h1>
+      </div>
+      <nav>
+        <a href="index.html" class="activo">Catálogo</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="ofertas.html">Ofertas</a>
+      </nav>
+    </header>
+
+    <main class="contenedor">
+      <section class="catalogo">
+        <h2>Productos de temporada</h2>
+
+        <div class="filtros">
+          <input type="text" id="buscador" placeholder="Buscar producto..." />
+          <select id="categoria">
+            <option value="todas">Todas las categorías</option>
+            <option value="verdura">Verdura</option>
+            <option value="fruta">Fruta</option>
+            <option value="cesta">Cestas</option>
+          </select>
+          <select id="orden">
+            <option value="nombre">Ordenar por nombre</option>
+            <option value="precio-asc">Precio: de menor a mayor</option>
+            <option value="precio-desc">Precio: de mayor a menor</option>
+          </select>
+        </div>
+
+        <p id="contador" class="contador"></p>
+        <div id="lista-productos" class="rejilla"></div>
+      </section>
+
+      <aside class="carrito">
+        <h2>Tu cesta</h2>
+        <ul id="lineas-carrito"></ul>
+        <p id="carrito-vacio" class="aviso">Todavía no has añadido nada.</p>
+
+        <div class="cupon">
+          <input type="text" id="cupon" placeholder="Código de descuento" />
+          <button id="aplicar-cupon">Aplicar</button>
+        </div>
+        <p id="mensaje-cupon" class="aviso"></p>
+
+        <table class="totales">
+          <tr>
+            <td>Subtotal</td>
+            <td id="subtotal">0,00 €</td>
+          </tr>
+          <tr>
+            <td>Descuento</td>
+            <td id="descuento">0,00 €</td>
+          </tr>
+          <tr>
+            <td>Envío</td>
+            <td id="envio">0,00 €</td>
+          </tr>
+          <tr>
+            <td>IVA incluido</td>
+            <td id="iva">0,00 €</td>
+          </tr>
+          <tr class="total">
+            <td>Total</td>
+            <td id="total">0,00 €</td>
+          </tr>
+        </table>
+
+        <button id="vaciar" class="secundario">Vaciar cesta</button>
+      </aside>
+    </main>
+
+    <footer class="pie">
+      <p>La Huerta · Proyecto de prácticas · CFGS DAW · Luis Camuñas</p>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/catalogo.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
